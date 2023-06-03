@@ -10,26 +10,15 @@ import { Link } from 'react-router-dom';
 
 
 export default function Navbar({name}) {
-  // HamBurger
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+
   // Dropdown
   const [dropdown, setDropdown] = useState(false);
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
+    setDropdown(false);
   };
 
 
@@ -42,13 +31,10 @@ export default function Navbar({name}) {
           <img className='logo' src='./images/logo4.png' alt="COLLECTIONS HUB" height={130} />
           <h2>Finco</h2>
         </NavLink>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+       
+        <ul className='nav-menu'>
           <li className='nav-item'>
-            <NavLink to="/" className='nav-links'  onClick={closeMobileMenu}>
+            <NavLink to="/" className='nav-links'  >
               Guide
             </NavLink>
           </li>
@@ -58,22 +44,20 @@ export default function Navbar({name}) {
             </NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to='/AboutUs' className='nav-links'  onClick={closeMobileMenu}>
+            <NavLink to='/AboutUs' className='nav-links'  >
               About Us
             </NavLink>
           </li>
           <li className='nav-item nav-links'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}>
-            {/* <NavLink to='/Accessories'  onClick={closeMobileMenu}> */}
               Calculator
-            {/* </NavLink> */}
              {dropdown && <Dropdown />}
           </li>
         </ul>
         < div className='Profile'>
         <i className="fa fa-user-circle" />
-        <NavLink to={name ?'/profile' : '/singup-login'} className='nav-links' onClick={closeMobileMenu}>
+        <NavLink to={name ?'/profile' : '/singup-login'} className='nav-links' >
               {name ? name: "Login"}
             </NavLink>
         </div>
