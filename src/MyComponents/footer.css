@@ -1,0 +1,60 @@
+.foot1{
+    width: 100%;
+    padding: 30px 15%;
+    box-sizing: border-box;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: #c1c5d0;
+    background: #2a2c35;
+    line-height: 22px;
+}
+.foot1 h3{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: white;
+}
+.foot1 .num{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.foot1 p{
+    display: inline-block;
+}
+.fa-mobile-alt,.fa-phone,.fa-map-marker-alt,.fa-envelope,.fa-brands{
+    color: #c1c5d0;
+    font-size: 16px;
+    padding-right:10px ;
+    display: inline-block;
+}
+.fa-map-marker-alt{
+    position: relative;
+    top: -20px;
+}
+.foot2{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+.num:hover,.tel:hover,.address:hover,.mail:hover{
+    color: white;
+}
+.subfoot2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.fa-facebook,.fa-instagram-square,.fa-twitter,.fa-linkedin-in, .fa-instagram{
+    padding: 10px;
+    font-size: 25px;
+    color: #c1c5d0;
+}
+.fa-facebook:hover,.fa-instagram-square:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+    color: white;
+}
+.footer{
+    padding: 0;
+}

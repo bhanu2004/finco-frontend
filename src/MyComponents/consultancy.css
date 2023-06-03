@@ -1,0 +1,108 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.section2{
+    display: flex;
+    align-items: center;
+    /* background:linear-gradient(rgb(255, 255, 255),rgb(208, 222, 230,0.8)),url(../img/bg-image1.jpg); */
+    background: url('./Images/background.png');
+    background-size: cover;
+    height: 60vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: content-box;
+}
+.section2 img{
+    height: 60vh;
+    padding-left: 150px;
+}
+.left,.right{
+    flex-basis: 50%;
+
+}
+.left{
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.left h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.left li{
+    list-style-type: disc;
+    /* padding: 10px; */
+}
+
+.form{
+    width: 80%;
+    margin:0 auto;
+    padding: 10px 20px;
+    background-color: rgb(113, 112, 112);
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgb(66, 65, 65);
+    position: relative;
+}
+.form h2{
+    padding: 15px 0 15px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.fa-check-circle{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: rgb(113, 112, 112);
+    position:absolute;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input,select{
+    width: 95%;
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0;
+    padding: 10px;
+}
+option{
+    font-size: 15px;
+}
+input[type="submit"]{
+    background-color: rgb(252, 133, 22);
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(150, 91, 36);
+}
+.half{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px 0;
+}
+.half input,select{
+    width: 46%;
+    
+}
+.desc{
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    width: 95%;
+    /* margin: 10px; */
+    height: 100px;
+}

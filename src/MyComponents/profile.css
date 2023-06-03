@@ -1,0 +1,95 @@
+
+.profileOuterContainer{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(139, 208, 223);
+    padding: 50px 5% 50px 5% ;;
+}
+.ProfileInnerContainer{
+    padding-top: 30px;
+    width: 60%;
+    margin: auto;
+    min-height: 70vh;
+    background-color: white;
+    
+    border-radius: 15px;
+    position: relative;
+
+    
+}
+.profileImg{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(150, 150, 150);
+}
+.profileDataSection{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.consultStatus{
+    /* position: absolute; */
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(202, 202, 202);
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    bottom: 0;
+    
+}
+.consultStatus h1{
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: solid rgb(74, 74, 74) 3px;
+    margin-bottom: 10px;
+}
+.consultLists{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.singleData{
+    background-color: rgb(206, 199, 199);
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    font-size: 14px;
+    margin: 10px;
+    line-height: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+   
+    border-radius: 5px;
+
+}
+.currStatus{
+    text-align: right;
+    /* position: absolute; */
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    right: 2px;
+    /* left: 50px; */
+    background-color: rgb(255, 78, 78);
+    color: white;
+    display: inline-block;
+}
+.pass{
+    background-color: rgb(28, 192, 28);
+}
+.consultDesc{
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    border-radius: 8px;
+    height: 45px;
+    padding: 8px;
+}
