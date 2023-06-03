@@ -50,10 +50,6 @@ const Sign = ({setUser})=>{
             console.log(res.data.user);
             if(res.data.user){
             setUser(res.data.user);
-            console.log("beg");
-            
-            return redirect("/profile");
-            console.log("red0");
             } 
             
         });
