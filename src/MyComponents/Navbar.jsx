@@ -31,7 +31,7 @@ export default function Navbar({name}) {
           <img className='logo' src='./images/logo4.png' alt="COLLECTIONS HUB" height={130} />
           <h2>Finco</h2>
         </NavLink>
-       
+        
         <ul className='nav-menu'>
           <li className='nav-item'>
             <NavLink to="/" className='nav-links'  >
