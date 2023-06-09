@@ -29,13 +29,15 @@ const Sign = ({setUser})=>{
         // const {name,email,password} = values;
         axios.post('https://finco-backend.vercel.app/signup',values).then(res=>{
             setCd(!cd);
-        });
-        setCd(!cd);
-        setValues({
-            name:"",
-            email:"",
-            pass:""
-        });
+            setValues({
+                name:"",
+                email:"",
+                pass:""
+            })
+            console.log("data saved");
+
+        }).catch(err => console.log(err));
+        
     }
     
     const handleLoginSubmit = (e)=>{
